@@ -51,10 +51,10 @@ public class Main {
         System.out.println("Задача 5");
 
         int ageKid = 5;
-        if (ageKid <5) {
+        if (ageKid < 5) {
             System.out.printf("Если возраст ребенка равен %s, то он не может кататься на аатракционе. \n", ageKid);
         }
-        if (ageKid >= 5 && ageKid <14) {
+        if (ageKid >= 5 && ageKid < 14) {
             System.out.printf("Если возраст ребенка равен %s, то он может кататься только в сопровождении " +
                     "взрослого. \n", ageKid);
         }
