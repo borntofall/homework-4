@@ -7,15 +7,15 @@ public class Main {
         if (age >= 18) {
             System.out.printf("Если возраст человека равен %s , то он совершеннолетний \n", age);
         } else {
-            System.out.printf("Если возвраст человека равен %s , " +
+            System.out.printf("Если возраст человека равен %s , " +
                     "то он не достиг совершеннолетия, нужно немного подождать \n", age);
         }
 
 
         System.out.println("Задача 2");
 
-        int temperature = -32;
-        if (temperature < 5) {
+        int temperature = 5;
+        if (temperature <= 5) {
             System.out.printf("На улице %s градуса, нужно надеть шапку \n", temperature);
         } else {
             System.out.printf("На улице %s градусов, можно идти без шапки \n", temperature);
@@ -40,6 +40,7 @@ public class Main {
         if (agePeople >= 7 && agePeople <= 17) {
             System.out.printf("Если возраст человека равен %s, то ему нужно ходить в школу \n", agePeople);
         }
+
         if (agePeople >= 18 && agePeople <= 24) {
             System.out.printf("Если возраст человека равен %s, то его место в университете \n", agePeople);
         }
@@ -50,10 +51,10 @@ public class Main {
         System.out.println("Задача 5");
 
         int ageKid = 5;
-        if (ageKid < 5) {
-            System.out.printf("Если возраст ребенка равен %s, то он не может кататься на аатракционе. \n",ageKid);
+        if (ageKid <5) {
+            System.out.printf("Если возраст ребенка равен %s, то он не может кататься на аатракционе. \n", ageKid);
         }
-        if (ageKid >= 5 && ageKid < 14) {
+        if (ageKid >= 5 && ageKid <14) {
             System.out.printf("Если возраст ребенка равен %s, то он может кататься только в сопровождении " +
                     "взрослого. \n", ageKid);
         }
@@ -63,14 +64,12 @@ public class Main {
 
         System.out.println("Задача 6");
 
+        int peopleInTrain = 100;
         int trainCarriage = 102;
         int carriageSeat = 60;
         int carriageStand = trainCarriage - carriageSeat;
-        if (carriageSeat < 60) {
-            System.out.println("Есть сидячее место");
-        }
-        if (carriageStand < 42) {
-            System.out.println("Есть стоячее место");
+        if (peopleInTrain < 102) {
+            System.out.println("Есть сидячее или стоячее место");
         } else {
             System.out.println("Мест нет");
         }
@@ -84,8 +83,7 @@ public class Main {
         if (one > two && one > three) {
 
             System.out.printf("Число %s большее \n", one);
-        }
-         else if (two > three) {
+        } else if (two > three) {
             System.out.printf("Число %s большее \n", two);
         } else {
             System.out.printf("Число %s большее \n", three);
