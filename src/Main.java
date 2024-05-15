@@ -64,13 +64,19 @@ public class Main {
 
         System.out.println("Задача 6");
 
-        int peopleInTrain = 100;
+        int peopleInTrain = 50;
         int trainCarriage = 102;
         int carriageSeat = 60;
         int carriageStand = trainCarriage - carriageSeat;
+
         if (peopleInTrain < 102) {
-            System.out.println("Есть сидячее или стоячее место");
+            System.out.println("Места есть");
+        } else if (peopleInTrain < carriageSeat) {
+            System.out.println("Есть сидячие места");
+        } else if (peopleInTrain < carriageStand) {
+            System.out.println("Есть стоячие места");
         } else {
+
             System.out.println("Мест нет");
         }
 
